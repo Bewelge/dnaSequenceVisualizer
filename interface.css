@@ -1,0 +1,9 @@
+:root {
+	--mainColor: rgba(0,0,0,1);
+}
+canvas {
+	background-color: var(--mainColor);
+	position: absolute;
+	top: 0;
+	left: 0;
+}
