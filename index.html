@@ -20,13 +20,28 @@
 			Speed: </br><input id="speedInput" type="range" value="1" min="1" max="100" step="1" onchange="setSpeed()">
 		</div>
 		<div class='menuItem'>
-			Wrap around: </br><input id="wrapInput" type="checkbox" checked="true"  onchange="setWrap()">
+			Zoom: </br><input id="zoomInput" type="range" value="1" min="1" max="100" step="1" onchange="setZoom()">
+			<span>Or Scroll on canvas to Zoom in/out.</span>
 		</div>
+		
+		
+		<div class='menuItem'>
+			Wrap around: </br><input id="wrapInput" type="checkbox"   onchange="setWrap()">
+		</div>
+		<div class='menuItem'>
+			Auto Resize: </br><input id="autoResizeInput" type="checkbox" checked="true"  onchange="setAutoResize()">
+		</div>
+		<div class='menuItem'>
+			Static Directions (N-S-E-W): </br><input id="staticInput" type="checkbox"  onchange="setStatic()">
+		</br>
+		
+			Fluent Directions (with angle):: </br><input id="fluentInput" checked type="checkbox"  onchange="setFluent()">
+		</br>
+			3d (z-index changing size): </br><input id="3dInput" type="checkbox" checked="true"  onchange="set3d()">
+		</div>
+
 		<div class='menuItem'>
 			<button id="reload" type="button" checked="true"  onclick="reloadFromBeginning()">Run from Beginning</button>
-		</div>
-		<div class='menuItem'>
-			<span>Scroll on canvas to Zoom in/out.</span>
 		</div>
 		<div class='menuItem'>
 			<select id='drawTypeInput' onchange='setDrawType()'>
