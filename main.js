@@ -34,6 +34,7 @@ function start() {
 
 
   window.addEventListener("mousewheel", function(e) {
+    e.preventDefault();
     let change = 1 + e.wheelDeltaY / 500;
     drawS *= change;
     autoResize = false;
@@ -222,7 +223,7 @@ function setPositions(genome, tmpDrawS) {
         y += tmpZ * tmpDrawS * Math.sin(dir);
       }
       if (is3d) {
-        zDir -= Math.PI / 100;
+        zDir -= Math.PI / 90;
       }
       break
     case "c":
@@ -234,7 +235,7 @@ function setPositions(genome, tmpDrawS) {
         y += tmpZ * tmpDrawS * Math.sin(dir);
       }
       if (is3d) {
-        zDir += Math.PI / 100;
+        zDir += Math.PI / 90;
       }
       break
     case "n":
