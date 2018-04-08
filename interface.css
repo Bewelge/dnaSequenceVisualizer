@@ -7,3 +7,14 @@ canvas {
 	top: 0;
 	left: 0;
 }
+#settings {
+	width:20%;
+	height:100%;
+	position: fixed;
+	right: 0;
+	top:0;
+	background-color: rgba(255,255,255,0.5);
+}
+.menuItem {
+	margin-top:4vh;
+}

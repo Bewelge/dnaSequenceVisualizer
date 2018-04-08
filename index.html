@@ -11,6 +11,31 @@
 <body onload="start()">
 	<canvas id='canvas'></canvas>
 	<div id='seqDiv'></div>
+	<div id='settings'>
+		<div class='menuItem'>
+		Enter Sequence here.</br><input id='seqInput'>
+		<button id='subm' onclick='loadNew()'>Submit</button>
+		</div>
+		<div class='menuItem'>
+			Speed: </br><input id="speedInput" type="range" value="1" min="1" max="100" step="1" onchange="setSpeed()">
+		</div>
+		<div class='menuItem'>
+			Wrap around: </br><input id="wrapInput" type="checkbox" checked="true"  onchange="setWrap()">
+		</div>
+		<div class='menuItem'>
+			<button id="reload" type="button" checked="true"  onclick="reloadFromBeginning()">Run from Beginning</button>
+		</div>
+		<div class='menuItem'>
+			<span>Scroll on canvas to Zoom in/out.</span>
+		</div>
+		<div class='menuItem'>
+			<select id='drawTypeInput' onchange='setDrawType()'>
+				<option val='squares'>squares</option>
+				<option val='lines'>lines</option>
+				<option val='circles'>circles</option>
+			</select>
+		</div>
+</div>
 	<script src="jquery-3.2.1.min.js"></script>
 	<script type="text/javascript" src="main.js"></script>
 	<script type="text/javascript" src="ebolaSequence.js"></script>
