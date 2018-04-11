@@ -253,7 +253,7 @@ function wrapPositions() {
     wrapAmount++;
     if (wrap) {
       x -= width;
-      reloadFromSamePoint();
+      /*reloadFromSamePoint();*/
     } else if (autoResize) {
 
       drawS *= 0.9;
@@ -264,7 +264,7 @@ function wrapPositions() {
     wrapAmount--
     if (wrap) {
       x += width;
-      reloadFromSamePoint();
+      /*reloadFromSamePoint();*/
     } else if (autoResize) {
 
       drawS *= 0.9;
@@ -275,7 +275,7 @@ function wrapPositions() {
     wrapAmount++;
     if (wrap) {
       y += height;
-      reloadFromSamePoint();
+      /*reloadFromSamePoint();*/
     } else if (autoResize) {
 
       drawS *= 0.9;
@@ -286,7 +286,7 @@ function wrapPositions() {
     wrapAmount--;
     if (wrap) {
       y -= height;
-      reloadFromSamePoint();
+      /*reloadFromSamePoint();*/
     } else if (autoResize) {
 
       drawS *= 0.9;
